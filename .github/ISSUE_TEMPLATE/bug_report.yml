@@ -14,7 +14,6 @@ body:
       - Other (please specify in description)
   validations:
     required: true
- 
   - type: textarea
     id: description
     attributes:
