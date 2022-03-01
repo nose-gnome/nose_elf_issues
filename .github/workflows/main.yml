@@ -30,4 +30,4 @@ jobs:
           destination: nose-gnome/nose_elf.js
           issue_numbers: "1"
         env:
-          GH_TOKEN: ${{secrets.GH_TOKEN}}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
