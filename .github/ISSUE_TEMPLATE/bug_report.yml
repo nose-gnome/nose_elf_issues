@@ -42,5 +42,5 @@ body:
     description:  "If the bug is related to a command, please enter the command here"
     placeholder:  N/A
     value:  "/"
-  valildations:
+  validations:
     required: false
