@@ -3,15 +3,15 @@ description: Report an issue to help improve the nose_elf.
 labels: ['bug']
 body:
 - type: dropdown
-    id: interaction
-    attributes:
-      label: Which part of the bot is affected by the bug?
-      options:
-        - Commands
-        - Buttons
-        - Select Menu
-        - General Audio playback
-        - Other (please specify in description)
+  id: interaction
+  attributes:
+    label: Which part of the bot is affected by the bug?
+    options:
+      - Commands
+      - Buttons
+      - Select Menu
+      - General Audio playback
+      - Other (please specify in description)
   validations:
     required: true
  
