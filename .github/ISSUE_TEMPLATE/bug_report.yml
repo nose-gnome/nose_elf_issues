@@ -2,7 +2,7 @@ name: Bug report
 description: Report an issue to help improve the nose_elf.
 labels: ['bug']
 body:
-  - type: dropdown
+- type: dropdown
     id: interaction
     attributes:
       label: Which part of the bot is affected by the bug?
