@@ -1,7 +1,20 @@
-name: Bug
-description: Report an issue to help improve the project.
+name: Bug report
+description: Report an issue to help improve the nose_elf.
 labels: ['bug']
 body:
+  - type: dropdown
+    id: interaction
+    attributes:
+      label: Which part of the bot is affected by the bug?
+      options:
+        - Commands
+        - Buttons
+        - Select Menu
+        - General Audio playback
+        - Other (please specify in description)
+  validations:
+    required: true
+ 
   - type: textarea
     id: description
     attributes:
@@ -23,8 +36,12 @@ body:
       description: Is there anything else we should know about this bug?
     validations:
       required: false
-  - type: markdown
+  - type: input
+    id: command
     attributes:
-      value: |
-        You can also join our Discord community [here](http://discord.eddiehub.org)
-        Feel free to check out other cool repositories of the EddieHub Community [here](https://github.com/EddieHubCommunity)
+      label:  Affected command
+      description:  "If the bug is related to a command, please enter the command here"
+      placeholder:  N/A
+      value:  "/"
+    valildations:
+      required: true
